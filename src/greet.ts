@@ -1,4 +1,4 @@
-import { GreetOptions } from "./types.js";
+import { GreetOptions } from "./types/form.ts";
 
 export function greet(options: GreetOptions | string) {
 	const {

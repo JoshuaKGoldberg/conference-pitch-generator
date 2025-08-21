@@ -1,15 +1,25 @@
 {
 	"compilerOptions": {
+		"allowJs": true,
+		"allowImportingTsExtensions": true,
 		"declaration": true,
 		"declarationMap": true,
 		"esModuleInterop": true,
+		"incremental": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"lib": ["dom", "dom.iterable", "esnext"],
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
 		"noEmit": true,
+		"paths": { "~/*": ["./src/*"] },
+		"plugins": [{ "name": "next" }],
+		"verbatimModuleSyntax": true,
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": true,
 		"target": "ES2022"
 	},
-	"include": ["src"]
+	"include": [".next/types/**/*.ts", "next-env.d.ts", "src", "styled-system"],
+	"exclude": ["node_modules"]
 }
